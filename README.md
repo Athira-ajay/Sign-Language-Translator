@@ -2,7 +2,7 @@
 
 A real-time Sign Language Translator web application that detects hand gestures using computer vision and deep learning, and converts them into text, speech, and regional languages.
 
-Features
+Features:
 
 - 🔴 Real-time hand gesture recognition using webcam
 - ✍️ Word Builder (create words from detected gestures)
@@ -11,7 +11,7 @@ Features
 - 🔊 Text-to-Speech (voice output with accent)
 - 🎨 Clean and modern UI using Streamlit
 
-Technologies Used
+Technologies Used:
 
 - Python
 - Streamlit
@@ -21,7 +21,7 @@ Technologies Used
 - gTTS (Text-to-Speech)
 - Googletrans (Translation)
 
-Project Structure
+Project Structure:
 
 Sign-Language-Translator/
 │── app.py
@@ -32,16 +32,17 @@ Sign-Language-Translator/
 │── data/
 │ └── label_names.npy
 
-How to Run Locally
+How to Run Locally:
 
 git clone https://github.com/Athira-ajay/Sign-Language-Translator
+
 cd Sign-Language-Translator
 
 pip install -r requirements.txt
 
 streamlit run app.py
 
-Future Improvements
+Future Improvements:
 
   - Add more gesture classes
   - Improve model accuracy
