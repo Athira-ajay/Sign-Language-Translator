@@ -1,4 +1,4 @@
-🤟 **SIGN LANGUAGE TRANSLATOR**
+## 🤟 **SIGN LANGUAGE TRANSLATOR**
 
 A real-time **Sign Language Translator Web Application** that detects hand gestures using computer vision and deep learning, and converts them into **text, speech, and regional languages**.
 
@@ -97,6 +97,7 @@ Deployment link will be added here after hosting.
 ## 👩‍💻 Author
 
 **Athira Ajay**
+
 B.Tech Computer Science Student
 
 
