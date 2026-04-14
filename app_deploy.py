@@ -2,7 +2,6 @@ import streamlit as st
 import numpy as np
 from gtts import gTTS
 import tempfile
-from googletrans import Translator
 
 from ui_design import apply_ui, show_word_builder, show_sentence_builder, show_prediction, show_buttons
 
@@ -22,13 +21,8 @@ if "word" not in st.session_state:
 if "sentence" not in st.session_state:
     st.session_state.sentence = ""
 
-translator = Translator()
-
 def translate_text(text, dest_lang):
-    try:
-        return translator.translate(text, dest=dest_lang).text
-    except:
-        return text
+    return text  # simple fallback (no crash)
 
 # ---------------- SIDEBAR ----------------
 st.sidebar.subheader("🌍 Language Settings")
