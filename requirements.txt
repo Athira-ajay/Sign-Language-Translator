@@ -1,4 +1,4 @@
 streamlit
 numpy
 gTTS
-googletrans==4.0.0-rc1
+
