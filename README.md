@@ -34,7 +34,6 @@ Sign-Language-Translator/
 
 How to Run Locally
 
-```bash
 git clone https://github.com/Athira-ajay/Sign-Language-Translator
 cd Sign-Language-Translator
 
