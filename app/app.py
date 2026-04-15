@@ -75,7 +75,7 @@ frame_window = col1.image([])
 prediction_placeholder = col2.empty()
 
 # ---------------- BUTTONS (ALIGNED) ----------------
-add_letter, add_word, clear = show_buttons(col2)
+add_letter, add_word, space, clear = show_buttons(col2)
 
 if add_letter:
     if st.session_state.current_prediction != "":
@@ -84,9 +84,18 @@ if add_letter:
 if add_word:
     if st.session_state.word != "":
         # ✅ FIXED (no disappearing bug)
+        
+        # Add space only if needed
+        if st.session_state.sentence != "" and not st.session_state.sentence.endswith(" "):
+            st.session_state.sentence += " "
+            
         st.session_state.sentence += st.session_state.word + " "
         st.session_state.word = ""
 
+if space:
+    if not st.session_state.sentence.endswith(" "):
+        st.session_state.sentence += " "
+        
 if clear:
     st.session_state.word = ""
     st.session_state.sentence = ""
