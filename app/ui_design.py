@@ -84,7 +84,7 @@ def apply_ui():
 
 # 🔷 BUTTONS (ALIGNED)
 def show_buttons(col):
-    b1, b2, b3 = col.columns(3)
+    b1, b2, b3, b4 = col.columns(4)
 
     with b1:
         add_letter = st.button("Add Letter", use_container_width=True)
@@ -93,9 +93,12 @@ def show_buttons(col):
         add_word = st.button("Add Word", use_container_width=True)
 
     with b3:
+        space = st.button("Space", use_container_width=True)
+
+    with b4:
         clear = st.button("Clear", use_container_width=True)
 
-    return add_letter, add_word, clear
+    return add_letter, add_word, space, clear
 
 
 # 🔷 WORD BUILDER (SAFE)
