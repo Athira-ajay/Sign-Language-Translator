@@ -77,12 +77,6 @@ streamlit run app.py
 
 ---
 
-## 🌐 Live Demo
-
-Deployment link will be added here after hosting.
-
----
-
 ## 🎯 Future Enhancements
 
 * 🔹 Add more gesture classes
